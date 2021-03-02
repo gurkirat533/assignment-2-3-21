@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family : "verdane", sans-serif;
+  }
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding : 10px 40px;
+    background-color: #F5F5F5;
+    align-items: center;
+
+
+}
+.flex1 img {
+    width : 35%;
+}
+.header span {
+    padding: 0px 10px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    
+  display: block;
+  color: black;
+  
+  text-decoration: none;
+  font-size: 17px;
+}
+.header a{
+    /* padding: 0px 10px; */
+    letter-spacing: 4px;
+    font-weight: lighter;
+    
+  display: block;
+  color: black;
+  
+  text-decoration: none;
+  font-size: 17px;
+    
+    
+}
+.flex1{
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    padding: 0px 10px;
+
+}
+
+
+.flex2{
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+    padding: 0px 10px;
+    
+}
+
+.flex2 span{
+    margin: 0px 50px;
+}
+
+.flex3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+ 
+}
+.flex3 span{
+    margin: 0px 50px;
+}
+
+.joinNow button{
+  border-radius: 10%;
+  display: block;
+  color: black;
+  text-align: center;
+  background-color: cornflowerblue;
+  width: 100%;
+  letter-spacing: 4px;
+    font-weight: lighter;
+  font-size: 17px;
+  padding: 10px;
+}
