@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "verdana", sans-serif;
+  font-family: 'verdana', sans-serif;
+  letter-spacing: 2px;
 }
 .header {
   display: flex;
@@ -14,7 +15,7 @@
 }
 
 .header span {
-  padding: 0px 10px;
+  padding: 10px 10px;
   letter-spacing: 2px;
   font-weight: lighter;
 
@@ -25,7 +26,6 @@
   font-size: 12px;
 }
 .header a {
-  /* padding: 0px 10px; */
   letter-spacing: 4px;
   font-weight: lighter;
 
@@ -34,6 +34,9 @@
 
   text-decoration: none;
   font-size: 12px;
+}
+.header span:hover {
+  border-top: 2px solid black;
 }
 .flex1 {
   display: grid;
@@ -101,11 +104,6 @@
   text-decoration: none;
   font-size: 12px;
 }
-@media (max-width: 800px) {
-  .header {
-    flex-direction: column;
-  }
-}
 
 .hero {
   background-color: #f5f5f5;
@@ -122,12 +120,12 @@
   flex-direction: column;
   padding: 10px 10px;
 }
-.left h2 {
+.hero .left h2 {
   align-self: flex-start;
   letter-spacing: 3px;
   font-size: 55px;
 }
-.left p {
+.hero .left p {
   align-self: flex-start;
   letter-spacing: 2px;
   font-size: 20px;
@@ -139,7 +137,7 @@
   flex-direction: column;
   align-items: center;
 }
-.left .form input[type="text"] {
+.left .form input[type='text'] {
   border: none;
   width: 50%;
   padding: 12px 20px;
@@ -153,7 +151,7 @@
   outline: none;
 }
 
-.left .form input[type="text"]:focus {
+.left .form input[type='text']:focus {
   border-bottom: 3px solid #00796b;
   outline: none;
 }
@@ -204,40 +202,382 @@
 }
 
 .info {
-  padding: 8rem 2rem;
+  padding: 4rem 2rem;
   display: flex;
-  /* flex-wrap: wrap; */
-  flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .info .left {
-  position: relative;
-  flex: 40%;
-  width: 200px;
-  height: 200px;
-  position: relative;
-  margin: 20px;
-border : 1px solid black;
+  flex: 45%;
 }
-.box{
-  width: 100%;
-  height: 100%;            
-  position: absolute;
-  background-color: #f5f5f5;
-  top: 0;
-  left: 0;
-  
-}
-.stack-top{
-  background-color: #424242;
-width: 100%;
-  height: 50%;
-  z-index: 9;
-  margin: 180px 20px; /* for demo purpose  */
+.left .container {
+  width: 250px;
+  height: 400px;
+  position: relative;
+  margin: 30px;
+  padding-left: 20px;
 }
 
+.left .box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #f5f5f5;
+  /* padding: 30% 40% 40% 40%; */
+}
+.box img {
+  width: 70px;
+  height: 70px;
+  margin: 120px 80px 60px 85px;
+}
+.left .overlay {
+  height: 150px;
+  width: 350px;
+  z-index: 9;
+  margin: 300px 30px;
+  padding-left: 50px;
+  background: #455a64;
+}
+
+.overlay .text {
+  color: white;
+  padding: 10px 35px;
+}
+
+.overlay .text p {
+  font-size: 12px;
+  padding: 0px 20px;
+  border-left: 1px solid white;
+  letter-spacing: 3px;
+}
 .info .right {
-  flex: 60%;
-  background-color: f5f5f5;
+  flex: 55%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px 60px;
+  letter-spacing: 4px;
+}
+
+.info .right .head {
+  font-size: small;
+  padding-bottom: 1rem;
+}
+
+.info .right .banner {
+  font-size: larger;
+  padding-bottom: 1rem;
+}
+
+.howitworks {
+  padding: 0rem 3rem;
+  font-size: small;
+}
+.works {
+  padding: 2rem 3rem;
+}
+.section-3-outer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.left-section-3 p {
+  text-align: left;
+  font-size: 28px;
+  letter-spacing: 3px;
+  padding-right: 2rem;
+}
+
+.right-section-3 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: 0rem 3rem;
+}
+
+.right-section-3 .para {
+  text-align: left;
+  font-size: 18px;
+  letter-spacing: 3px;
+
+  padding: 1rem 0rem;
+}
+
+.right-section-3 hr {
+  border-top: 1px solid black;
+  width: 100%;
+}
+.logo {
+  display: flex;
+  width: 100%;
+  padding: 1rem 0rem;
+  align-items: center;
+}
+
+.logo .image {
+  flex: 20%;
+}
+.logo .text {
+  flex: 80%;
+}
+
+.logo img {
+  width: 2rem;
+}
+.right-section-3 h5 {
+  font-size: 10px;
+}
+
+.cardcontainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+.cardcontainer img {
+  border-radius: 50%;
+  width: 100px;
+}
+.cardOdd {
+  width: 100%;
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: end;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+.cardEven {
+  width: 100%;
+  padding: 6rem 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+.cardcontainer h3 {
+  padding: 1rem 0rem;
+}
+
+.pricing {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 4rem;
+}
+
+.pricingCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0rem 1rem;
+  text-align: center;
+  border: 1px solid black;
+  padding: 3rem;
+}
+
+.shadow {
+  box-shadow: 10px 15px #e0e0e0;
+}
+
+.pricingCard h3 {
+  padding-top: 1rem;
+  font-size: 30px;
+}
+
+.pricingCard p {
+  padding: 2rem 0rem;
+}
+
+.pricingCard h3 {
+  width: 80%;
+}
+.pricingCard button {
+  padding: 1rem;
+  background-color: #455a64;
+  color: white;
+  border: 1px solid #455a64;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+}
+
+.pricingCard button:hover,
+.pricingCard button:active {
+  background-color: #616161;
+}
+
+.pricingCard a {
+  color: black;
+  padding: 1rem 0rem;
+}
+
+.grey {
+  background-color: #f5f5f5;
+}
+.content5 {
+  display: flex;
+
+  align-items: flex-start;
+  padding: 2rem;
+  padding-right: 0px;
+  margin-top: 4rem;
+}
+
+.content5 .left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 2rem 8rem;
+  letter-spacing: 4px;
+  line-height: 2rem;
+  text-align: left;
+}
+
+.content5 .left .head {
+  font-size: small;
+  padding-bottom: 1rem;
+}
+
+.content5 .left .banner {
+  font-size: 35px;
+  font-weight: 600;
+  padding-bottom: 1rem;
+  line-height: 3rem;
+}
+.content5 .left .text {
+  padding: 1rem 0rem;
+}
+.content5 .right {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.content5 .right .top {
+  flex: 65%;
+  align-self: flex-start;
+  width: 50%;
+  background-color: #616161;
+  display: flex;
+  justify-content: center;
+  padding: 8rem 1rem;
+  margin-top: -5rem;
+}
+.content5 .right img {
+  width: 30%;
+  margin: auto;
+}
+
+.content5 .right .bottom {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.bottom .img {
+  margin: 1rem;
+  background-color: #616161;
+  display: flex;
+  justify-content: center;
+  padding: 4rem 6rem;
+}
+
+.joinnow {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem 4rem;
+
+  align-items: center;
+}
+.joinnow .left {
+  flex: 50%;
+  line-height: 2rem;
+}
+.joinnow .right {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.joinnow .right button {
+  padding: 1rem 3rem;
+  border: none;
+  outline: none;
+  background-color: #bdbdbd;
+  border-radius: 2rem;
+  color: white;
+}
+.joinnow .right button:active {
+  background-color: #f5f5f5;
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+.last {
+  display: flex;
+
+  justify-content: space-between;
+  padding: 2rem 3rem;
+}
+.last table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.last td {
+  padding: 1rem 3rem;
+  text-align: left;
+}
+.last tr:hover {
+  border-bottom: 1px solid #bdbdbd;
+}
+
+.last input {
+  padding: 5px 1rem;
+  background-color: inherit;
+  outline: none;
+  border-radius: 30px;
+}
+.last input:hover {
+  background-color: #bdbdbd;
+  color: white;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 30% 30% 40%;
+  align-items: center;
+  text-align: center;
+}
+
+.footer .logo {
+  display: flex;
+  justify-content: center;
+}
+
+.footer .logo img {
+  width: 20%;
+}
+@media only screen and (max-width: 600px) {
+  .header,
+  .hero,
+  .logos,
+  .info,
+  .section-3-outer,
+  .pricing,
+  .content5,
+  .joinnow,
+  .last,
+  .footer {
+    flex-direction: column;
+  }
 }
